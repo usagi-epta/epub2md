@@ -5,7 +5,8 @@ import _ from 'lodash'
 import parseSection, { Section } from '../parseSection'
 import { parseOptions, ParserOptions } from './options'
 import { Zip } from './zip'
-import { parseStructure, Structure } from '../xml'
+import { parseStructure } from '../xml'
+import type { Structure } from '../xml'
 
 export const defaultOptions = { type: 'path', expand: false } as ParserOptions
 

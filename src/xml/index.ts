@@ -1,11 +1,14 @@
 import path from 'node:path/posix'
 import logger from '../logger'
 import { parseMetaContainer } from './meta-container'
-import { Opf, parseOpf } from './opf'
+import { parseOpf } from './opf'
 import { parseToc } from './toc'
-export type { Opf } from './opf'
-export { Toc, TocItem } from './toc'
 import { Zip } from '../epub/zip'
+import type { Opf } from './opf'
+
+export { Toc } from './toc'
+export type { Opf } from './opf'
+export type { TocItem } from './toc'
 
 export function parseStructure(zip: Zip) {
   const parse = new Parse(zip)
